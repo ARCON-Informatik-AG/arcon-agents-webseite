@@ -1,0 +1,9 @@
+services:
+  arcon-agents-webseite:
+    container_name: arcon-agents-webseite
+    image: ghcr.io/philippefuhrer/arcon-agents-webseite:1.0.0
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
