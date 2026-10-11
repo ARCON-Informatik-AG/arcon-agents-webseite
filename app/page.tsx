@@ -179,8 +179,23 @@ export default function LandingPage() {
       {/* 1. Hero */}
       <section
         id="home"
-        className="relative flex min-h-[100dvh] flex-col justify-center overflow-hidden bg-[#004132] px-4 py-20 pt-28 text-white sm:px-6 sm:pt-32 lg:px-12"
+        className="relative flex min-h-[100dvh] flex-col justify-center overflow-hidden px-4 py-20 pt-28 text-white sm:px-6 sm:pt-32 lg:px-12"
       >
+        {/* Animated background: gradient mesh + floating shapes (section has no bg-color of its own, so it can't paint over this -z-10 layer) */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#004132] via-[#00583d] to-[#004132]" />
+
+          <div className="absolute top-20 left-20 h-4 w-4 rounded-full bg-white/10 animate-float-random-1 animation-delay-500" />
+          <div className="absolute top-40 right-40 h-6 w-6 rounded-square bg-white/10 animate-float-random-2 animation-delay-700" />
+          <div className="absolute bottom-40 left-40 h-3 w-3 rounded-full bg-white/10 animate-float-random-3 animation-delay-1200" />
+          <div className="absolute bottom-20 right-20 h-5 w-5 rounded-square bg-white/10 animate-float-random-4 animation-delay-1500" />
+
+          <div className="absolute top-1/3 left-1/3 h-2 w-2 rounded-full bg-white/10 animate-drift-horizontal animation-delay-2000" />
+          <div className="absolute top-2/3 right-1/3 h-3 w-3 rounded-square bg-white/10 animate-drift-diagonal animation-delay-3000" />
+          <div className="absolute top-1/2 left-16 h-4 w-4 rounded-full bg-white/10 animate-float-random-1 animation-delay-4000" />
+          <div className="absolute bottom-1/3 right-16 h-2 w-2 rounded-square bg-white/10 animate-float-random-3 animation-delay-1000" />
+        </div>
+
         <div className="mx-auto grid w-full max-w-7xl gap-16 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <div className="animate-fade-in-up">
             <Badge
