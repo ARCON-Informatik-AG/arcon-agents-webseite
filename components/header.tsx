@@ -19,7 +19,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full bg-white sm:bg-background/80 sm:backdrop-blur-md border-b border-border/40 z-50">
+    <header className="fixed top-0 w-full bg-white border-b border-border/40 z-50">
       <nav
         aria-label="Hauptnavigation"
         className="mx-auto max-w-7xl px-6 lg:px-0"
