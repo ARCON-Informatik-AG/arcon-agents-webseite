@@ -54,12 +54,6 @@ export default function AGBPage() {
           <p className="text-sm text-foreground">
             Stand: {new Date().toLocaleDateString('de-CH')}
           </p>
-          <div className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
-            <strong>Hinweis für die Veröffentlichung:</strong> Dieser Text
-            stammt noch aus dem Vorgängerprodukt Meeting Agent (Audio-Transkription,
-            Abonnemente) und beschreibt nicht die Nutzung von Arcon Agents. Er muss
-            vor dem Launch durch die Rechts-/Geschäftsleitung inhaltlich überarbeitet werden.
-          </div>
         </div>
       </section>
 
@@ -75,10 +69,10 @@ export default function AGBPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">1. Geltungsbereich</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der ARCON Informatik AG (nachfolgend &ldquo;Anbieter&rdquo;) und ihren Kunden (nachfolgend &ldquo;Nutzer&rdquo;) über die Nutzung des KI-basierten Meeting Agent Services.
+                      Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen der ARCON Informatik AG (nachfolgend &ldquo;Anbieter&rdquo;) und ihren Kunden (nachfolgend &ldquo;Nutzer&rdquo;) über die Nutzung der KI-Plattform Arcon Agents.
                     </p>
                     <p>
-                      Der Meeting Agent ist ein Service zur automatischen Transkription, Analyse und Zusammenfassung von Meetings, optimiert für Schweizerdeutsch.
+                      Arcon Agents ist die Schweizer KI-Plattform für Unternehmen. Sie ermöglicht es, eigene KI-Assistenten einzurichten, mit Unternehmenswissen zu verbinden und im Arbeitsalltag zu nutzen.
                     </p>
                     <p>
                       Mit der Registrierung und Nutzung des Services akzeptiert der Nutzer diese AGB in ihrer jeweils gültigen Fassung.
@@ -99,6 +93,9 @@ export default function AGBPage() {
                     <p>
                       Der Anbieter behält sich vor, Registrierungen ohne Angabe von Gründen abzulehnen.
                     </p>
+                    <p>
+                      Die Nutzung erfolgt innerhalb einer Organisation («Tenant»). Der Owner bzw. Admin verwaltet die Mitglieder und deren Rollen und stellt sicher, dass diese AGB eingehalten werden.
+                    </p>
                   </div>
                 </div>
 
@@ -106,13 +103,14 @@ export default function AGBPage() {
                 <div className="mb-12">
                   <h2 className="text-2xl font-bold text-foreground mb-6">3. Leistungen und Verfügbarkeit</h2>
                   <div className="space-y-4 text-foreground">
-                    <p>Der Anbieter stellt dem Nutzer den Meeting Agent Service zur Verfügung, insbesondere:</p>
+                    <p>Der Anbieter stellt dem Nutzer den Service Arcon Agents zur Verfügung, insbesondere:</p>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li>KI-basierte Transkription von Audio-Dateien und Live-Meetings</li>
-                      <li>Automatische Generierung von Meeting-Zusammenfassungen</li>
-                      <li>Extraktion von Aufgaben und Erkenntnissen</li>
-                      <li>Export-Funktionen (z.B. Word, PDF)</li>
-                      <li>Schweizerdeutsch-optimierte Spracherkennung</li>
+                      <li>Eigene KI-Assistenten mit individuellen Anweisungen, Modellwahl, optionaler Websuche und Skills/Tools</li>
+                      <li>Zugriff auf die Arcon KI sowie ausgewählte externe KI-Modelle</li>
+                      <li>Wissensdatenbank: Hochladen und Durchsuchen von PDF-, Word-, Excel- und Textdateien</li>
+                      <li>Dashboards, Diagramme und Word-Exporte im Unternehmenslayout</li>
+                      <li>Personalisierung und Erinnerungsfunktion (abschaltbar) sowie Inkognito-Modus ohne Speicherung</li>
+                      <li>Individuelle Integrationen, z. B. mit Abacus, nach Vereinbarung</li>
                     </ul>
                     <p>
                       Der Service ist grundsätzlich 24/7 verfügbar. Geplante Wartungsarbeiten werden rechtzeitig angekündigt. Eine Verfügbarkeit von 100% kann nicht garantiert werden.
@@ -131,7 +129,7 @@ export default function AGBPage() {
                       Die Preise richten sich nach der jeweils gültigen Preisliste auf der Website. Alle Preise verstehen sich in Schweizer Franken (CHF) inklusive gesetzlicher Mehrwertsteuer.
                     </p>
                     <p>
-                      Die Abrechnung erfolgt monatlich im Voraus für Abonnements sowie verbrauchsabhängig für Pay-per-Use-Modelle.
+                      Die Abrechnung von Abonnements erfolgt monatlich oder jährlich im Voraus. Enterprise-Angebote mit individuellen Integrationen und Service-Leveln werden separat vereinbart.
                     </p>
                     <p>
                       Bei Zahlungsverzug kann der Anbieter den Zugang sperren und Mahngebühren erheben.
@@ -147,7 +145,7 @@ export default function AGBPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">5. Datenschutz und Datensicherheit</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Der Schutz der Nutzerdaten hat höchste Priorität. Sämtliche Informationen zum Thema Datenschutz finden Sie in der <Link href="/datenschutz" className="text-primary underline">Datenschutzerklärung</Link>.
+                      Der Schutz der Nutzerdaten hat höchste Priorität. Arcon Agents wird vollständig in der Schweiz gehostet. Chat-Inhalte, Dokumente und Anhänge werden nicht für Schulungszwecke der Arcon KI verwendet oder an Dritte weitergegeben. Bei Nutzung externer Modelle oder der Websuche werden die betreffenden Anfragen an den jeweiligen Anbieter übermittelt. Sämtliche Informationen zum Thema Datenschutz finden Sie in der <Link href="/datenschutz" className="text-primary underline">Datenschutzerklärung</Link>.
                     </p>
                   </div>
                 </div>
@@ -159,8 +157,9 @@ export default function AGBPage() {
                     <p>Der Nutzer verpflichtet sich:</p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Den Service nur für rechtmässige Zwecke zu verwenden</li>
-                      <li>Sicherzustellen, dass alle Meetingteilnehmenden der Verarbeitung ihrer Audio-Daten zustimmen</li>
+                      <li>Sicherzustellen, dass hochgeladene Dokumente und Daten rechtmässig bereitgestellt werden und die erforderlichen Rechte daran bestehen</li>
                       <li>Keine urheberrechtlich geschützten oder vertraulichen Inhalte Dritter ohne Berechtigung zu verarbeiten</li>
+                      <li>Personendaten Dritter nur zu verarbeiten, wenn dafür eine Rechtsgrundlage besteht</li>
                       <li>Zugangsdaten geheim zu halten und Missbrauch unverzüglich zu melden</li>
                       <li>Die geltenden Gesetze und diese AGB einzuhalten</li>
                     </ul>
@@ -178,13 +177,13 @@ export default function AGBPage() {
                       Der Anbieter haftet nur für Schäden, die auf Vorsatz oder grober Fahrlässigkeit beruhen. Eine Haftung für leichte Fahrlässigkeit ist ausgeschlossen.
                     </p>
                     <p>
-                      Es wird keine Gewähr für die Richtigkeit, Vollständigkeit oder rechtliche Verwendbarkeit der erzeugten Transkriptionen oder Zusammenfassungen übernommen. Der Nutzer ist verpflichtet, die Ergebnisse selbst zu prüfen.
+                      Es wird keine Gewähr für die Richtigkeit, Vollständigkeit oder rechtliche Verwendbarkeit der erzeugten Antworten, Zusammenfassungen, Dashboards und Dokumente übernommen. Der Nutzer ist verpflichtet, die Ergebnisse selbst zu prüfen.
                     </p>
                     <p>
                       Der Anbieter haftet nicht für mittelbare Schäden, entgangenen Gewinn oder Folgeschäden.
                     </p>
                     <p>
-                      Der Meeting Agent ist ein KI-basierter Service und ersetzt keine menschliche Prüfung.
+                      Arcon Agents ist ein KI-basierter Service und ersetzt keine menschliche Prüfung.
                     </p>
                   </div>
                 </div>
@@ -194,13 +193,13 @@ export default function AGBPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">8. Kündigung</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Abonnements können mit einer Frist von 30 Tagen zum Monatsende gekündigt werden.
+                      Monatliche Abonnements können mit einer Frist von 30 Tagen zum Monatsende gekündigt werden. Jahresabonnemente können zum Ende der Laufzeit gekündigt werden.
                     </p>
                     <p>
                       Das Recht zur ausserordentlichen Kündigung bleibt unberührt.
                     </p>
                     <p>
-                      Nach einer Kündigung werden alle Nutzerdaten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.
+                      Nach einer Kündigung bzw. der Löschung des Kontos (Selbstlöschung über die Kontoseite möglich) werden die Nutzerdaten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen, insbesondere für Rechnungsdaten.
                     </p>
                   </div>
                 </div>

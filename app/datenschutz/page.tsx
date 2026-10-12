@@ -52,15 +52,8 @@ export default function DatenschutzPage() {
             Informationen zur Verarbeitung Ihrer personenbezogenen Daten nach schweizerischem Datenschutzgesetz (DSG)
           </p>
           <p className="text-sm text-foreground">
-            Stand: {new Date().toLocaleDateString('de-CH')}
+            Stand: 30.9.2026
           </p>
-          <div className="mt-6 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
-            <strong>Hinweis für die Veröffentlichung:</strong> Dieser Text
-            stammt noch aus dem Vorgängerprodukt Meeting Agent (Audiodaten, Transkripte,
-            Teams/Zoom-Integration) und beschreibt nicht die Datenverarbeitung von Arcon
-            Agents. Er muss vor dem Launch durch die Rechts-/Geschäftsleitung inhaltlich
-            überarbeitet werden.
-          </div>
         </div>
       </section>
 
@@ -76,14 +69,14 @@ export default function DatenschutzPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">1. Verantwortlicher der Datenbearbeitung</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Verantwortlicher für die Bearbeitung personenbezogener Daten im Sinne des schweizerischen 
-                      Datenschutzgesetzes (DSG) ist:
+                      Verantwortlicher für die Bearbeitung personenbezogener Daten im Sinne des schweizerischen Datenschutzgesetzes (DSG) ist:
                     </p>
                     <div>
                       <p><strong>ARCON Informatik AG</strong></p>
                       <p>Hinterbergstrasse 24</p>
                       <p>6312 Steinhausen</p>
                       <p>Schweiz</p>
+                      <p>E-Mail: servicedesk@arcon.ch</p>
                       <p>Telefon: +41 41 749 10 00</p>
                     </div>
                   </div>
@@ -114,32 +107,53 @@ export default function DatenschutzPage() {
                     <div>
                       <h3 className="text-lg font-semibold mb-3">3.1 Stammdaten</h3>
                       <ul className="list-disc pl-6 space-y-1">
-                        <li>Vor- und Nachname</li>
-                        <li>E-Mail-Adresse</li>
-                        <li>Firmenbezeichnung</li>
-                        <li>Rechnungsadresse</li>
-                        <li>Telefonnummer (optional)</li>
+                        <li>E-Mail-Adresse und Zugangsdaten (Anmeldung)</li>
+                        <li>Zugehörigkeit zu einer Organisation («Tenant») inkl. Rolle (Owner/Admin/Member)</li>
+                        <li>Optional: zweiter Faktor (Zwei-Faktor-Authentisierung) zur Kontoabsicherung</li>
                       </ul>
                     </div>
 
                     <div>
                       <h3 className="text-lg font-semibold mb-3">3.2 Nutzungsdaten</h3>
                       <ul className="list-disc pl-6 space-y-1">
-                        <li>Anmeldedaten und Zugriffszeiten</li>
-                        <li>IP-Adresse</li>
-                        <li>Browser-Informationen</li>
-                        <li>Genutzte Funktionen und Dienste</li>
-                        <li>Log-Dateien</li>
+                        <li>Anmelde- und Sitzungsdaten</li>
+                        <li>IP-Adresse, Browser-Informationen und Server-Log-Dateien</li>
+                        <li>Nutzung einzelner Funktionen (z. B. Websuche, Reasoning-Stufe, Inkognito-Modus)</li>
                       </ul>
                     </div>
 
                     <div>
-                      <h3 className="text-lg font-semibold mb-3">3.3 Audiodaten</h3>
+                      <h3 className="text-lg font-semibold mb-3">3.3 Chat- und Inhaltsdaten</h3>
                       <ul className="list-disc pl-6 space-y-1">
-                        <li>Hochgeladene Audio-Dateien (temporär)</li>
-                        <li>Transkribierte Texte (temporär)</li>
-                        <li>Meeting-Protokolle (temporär)</li>
-                        <li>Automatisch generierte Zusammenfassungen, Erkenntnisse und Aufgaben (temporär)</li>
+                        <li>Unterhaltungen und einzelne Nachrichten (Inhalt, Quellenangaben)</li>
+                        <li>Im <strong>Inkognito-Modus</strong> werden weder die Unterhaltung noch einzelne Nachrichten gespeichert</li>
+                        <li>Angehängte Dateien/Bilder zu Nachrichten (Dateiname, ggf. verkleinerte Bild-Vorschau)</li>
+                        <li>Im Chat ad-hoc hochgeladene Kontextdateien (nur für die aktuelle Antwort verwendet, nicht dauerhaft gespeichert)</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">3.4 Wissensdatenbank / hochgeladene Dokumente</h3>
+                      <ul className="list-disc pl-6 space-y-1">
+                        <li>Dauerhaft hochgeladene Dokumente (PDF, Word, Excel, Text) inkl. extrahiertem Text und Metadaten</li>
+                        <li>Semantische Vektor-Repräsentationen des Dokumenteninhalts zur Suchfunktion (RAG)</li>
+                        <li>Für Analyse-/Dashboard-Funktionen hochgeladene strukturierte Datensätze</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">3.5 Personalisierungs- und Profildaten</h3>
+                      <ul className="list-disc pl-6 space-y-1">
+                        <li>Individuelle Personalisierungsregeln sowie die Einstellung «Erinnerungen aktiv/deaktiviert»</li>
+                        <li>Automatisch aus abgeschlossenen Unterhaltungen extrahierte Nutzer-Erinnerungen zu Kommunikationsstil, Präferenzen und Profilfakten</li>
+                        <li>Gespeicherte Prompt-Vorlagen</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">3.6 Von Ihnen konfigurierte Agenten</h3>
+                      <ul className="list-disc pl-6 space-y-1">
+                        <li>Agenten-Konfigurationen (Name, Prompt, gewähltes Modell, Temperatur, Websuche an/aus)</li>
                       </ul>
                     </div>
                   </div>
@@ -153,10 +167,10 @@ export default function DatenschutzPage() {
                       <h3 className="text-lg font-semibold mb-3">4.1 Vertragserfüllung</h3>
                       <p className="mb-2">Rechtsgrundlage: Erfüllung des Nutzungsvertrags</p>
                       <ul className="list-disc pl-6 space-y-1">
-                        <li>Bereitstellung der Meeting Agent Services</li>
-                        <li>Verwaltung des Nutzerkontos</li>
-                        <li>Transkription und Analyse von Audiodateien</li>
-                        <li>Rechnungsstellung und Zahlungsabwicklung</li>
+                        <li>Bereitstellung von Arcon Agent und Verwaltung des Nutzerkontos</li>
+                        <li>Ausführung von Chat-Anfragen inkl. Beantwortung durch die Arcon KI oder ein von Ihnen gewähltes Modell</li>
+                        <li>Durchsuchen und Bereitstellen hochgeladener Dokumente (Wissensdatenbank/RAG)</li>
+                        <li>Erstellung von Diagrammen, Dashboards und Word-Exporten auf Ihre Anfrage</li>
                         <li>Technischer Support</li>
                       </ul>
                     </div>
@@ -166,14 +180,23 @@ export default function DatenschutzPage() {
                       <p className="mb-2">Rechtsgrundlage: Wahrung berechtigter Interessen (Art. 31 Abs. 1 DSG)</p>
                       <ul className="list-disc pl-6 space-y-1">
                         <li>Verbesserung und Weiterentwicklung der Services</li>
+                        <li>Automatische Extraktion von Personalisierungs-Erinnerungen zur Verbesserung der Antwortqualität (kann pro Nutzer deaktiviert werden)</li>
                         <li>Gewährleistung der IT-Sicherheit</li>
                         <li>Verhinderung von Missbrauch</li>
-                        <li>Analyse zur Serviceoptimierung (anonymisiert)</li>
                       </ul>
                     </div>
 
                     <div>
-                      <h3 className="text-lg font-semibold mb-3">4.3 Gesetzliche Pflichten</h3>
+                      <h3 className="text-lg font-semibold mb-3">4.3 Einwilligung / Nutzersteuerung</h3>
+                      <ul className="list-disc pl-6 space-y-1">
+                        <li>Aktivierung der Websuche pro Agent und pro Anfrage</li>
+                        <li>Aktivierung des Inkognito-Modus (keine Speicherung des Gesprächs)</li>
+                        <li>Deaktivierung der automatischen Erinnerungsfunktion in den Einstellungen</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3">4.4 Gesetzliche Pflichten</h3>
                       <p className="mb-2">Rechtsgrundlage: Erfüllung rechtlicher Verpflichtungen</p>
                       <ul className="list-disc pl-6 space-y-1">
                         <li>Aufbewahrung von Rechnungsdaten (Mehrwertsteuergesetz)</li>
@@ -189,36 +212,36 @@ export default function DatenschutzPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">5. Aufbewahrung und Löschung</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Ihre Daten werden nur so lange aufbewahrt, wie es für die Zweckerfüllung erforderlich ist:
+                      Ihre Daten werden grundsätzlich so lange aufbewahrt, bis sie aktiv gelöscht werden:
                     </p>
                     
                     <table className="w-full border-collapse border border-gray-300">
                       <thead>
                         <tr className="bg-gray-50">
                           <th className="border border-gray-300 p-3 text-left">Datenkategorie</th>
-                          <th className="border border-gray-300 p-3 text-left">Aufbewahrungsdauer</th>
+                          <th className="border border-gray-300 p-3 text-left">Aufbewahrung</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="border border-gray-300 p-3">Audio Dateien (Original)</td>
-                          <td className="border border-gray-300 p-3">Audio Dateien werden nach 72h gelöscht.</td>
+                          <td className="border border-gray-300 p-3">Unterhaltungen/Nachrichten (nicht inkognito)</td>
+                          <td className="border border-gray-300 p-3">Bis zur manuellen Löschung durch den Nutzer</td>
                         </tr>
                         <tr>
-                          <td className="border border-gray-300 p-3">Transkripte und Protokolle</td>
-                          <td className="border border-gray-300 p-3">Transkripte und Protokolle werden innerhalb von 7 Tagen gelöscht.</td>
+                          <td className="border border-gray-300 p-3">Inkognito-Chats</td>
+                          <td className="border border-gray-300 p-3">Werden nicht gespeichert</td>
                         </tr>
                         <tr>
-                          <td className="border border-gray-300 p-3">Stammdaten</td>
-                          <td className="border border-gray-300 p-3">Bis Vertragsende + 10 Jahre (Geschäftsbücher)</td>
+                          <td className="border border-gray-300 p-3">Hochgeladene Dokumente/Wissensdatenbank</td>
+                          <td className="border border-gray-300 p-3">Bis zur manuellen Löschung durch Nutzer/Admin</td>
                         </tr>
                         <tr>
-                          <td className="border border-gray-300 p-3">Nutzungs- und Log-Daten</td>
-                          <td className="border border-gray-300 p-3">12 Monate</td>
+                          <td className="border border-gray-300 p-3">Nutzer-«Erinnerungen»</td>
+                          <td className="border border-gray-300 p-3">Bis zur manuellen Löschung bzw. Deaktivierung der Funktion</td>
                         </tr>
                         <tr>
-                          <td className="border border-gray-300 p-3">Rechnungsdaten</td>
-                          <td className="border border-gray-300 p-3">10 Jahre (gesetzliche Aufbewahrungspflicht)</td>
+                          <td className="border border-gray-300 p-3">Kontodaten</td>
+                          <td className="border border-gray-300 p-3">Bis zur Löschung des Kontos (Selbstlöschung über Kontoseite möglich)</td>
                         </tr>
                       </tbody>
                     </table>
@@ -231,10 +254,7 @@ export default function DatenschutzPage() {
                   <div className="space-y-4 text-foreground">
                     <h3 className="text-lg font-semibold">6.1 Datenstandort Schweiz</h3>
                     <p>
-                      Sämtliche Datenbearbeitung und Speicherung erfolgt ausschliesslich im Arcon Data Center in der Schweiz.
-                      Eine Übermittlung von Personendaten ins Ausland findet nicht statt, ausser im Falle der Benutzung der Teams, Zoom, Google Meet Integration oder bei der Verwendung externer KI Modelle (jegliche andere Modelle als die Arcon KI).
-                      In diesem Fall werden die Daten auch über externe Systeme verarbeitet, welche sich teilweise im Ausland befinden können (Bspw. könnte Microsoft Teams die Daten weiterverarbeiten). Mit der Funktion &quot;einfache Aufnahme&quot; und dem lokalen KI Modell der
-                      ARCON Informatik AG werden die Daten ausschliesslich in der Schweiz im Arcon Data Center verabeitet und gespeichert.
+                      Sämtliche Datenbearbeitung und Speicherung erfolgt ausschliesslich in der Schweiz: Reverse Proxies, Applikationsserver, Datenbank sowie die Arcon KI (unser eigenes Sprachmodell) werden vollständig innerhalb der Schweiz betrieben und gehostet. Eine Übermittlung von Personendaten ins Ausland findet <strong>nicht</strong> statt – mit einer Ausnahme: Wenn Sie für einen Agenten bewusst ein <strong>externes Modell über OpenRouter</strong> auswählen (z. B. von Google, Anthropic oder OpenAI) oder die <strong>Websuche</strong> aktivieren, werden die betreffende Anfrage und die Modellantwort zur Verarbeitung an den externen Anbieter übermittelt. Diese Anbieter können ihre Infrastruktur auch im Ausland betreiben. Mit der Arcon KI und ohne aktivierte Websuche verbleiben Ihre Daten ausschliesslich in der Schweiz.
                     </p>
 
                     <h3 className="text-lg font-semibold mt-6">6.2 Technische Sicherheitsmassnahmen</h3>
@@ -245,7 +265,6 @@ export default function DatenschutzPage() {
                       <li>Regelmässige Sicherheitsaudits</li>
                       <li>Automatische Backups mit Verschlüsselung</li>
                       <li>Monitoring und Intrusion Detection</li>
-                      <li>etc.</li>
                     </ul>
 
                     <h3 className="text-lg font-semibold mt-6">6.3 Organisatorische Massnahmen</h3>
@@ -253,7 +272,6 @@ export default function DatenschutzPage() {
                       <li>Vertraulichkeitserklärungen aller Mitarbeitenden</li>
                       <li>Regelmässige Datenschutzschulungen</li>
                       <li>Incident Response Prozesse</li>
-                      <li>etc.</li>
                     </ul>
                   </div>
                 </div>
@@ -262,29 +280,27 @@ export default function DatenschutzPage() {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-6">7. Bekanntgabe von Daten</h2>
                   <div className="space-y-4 text-foreground">
-                    <p>
-                      Eine Bekanntgabe Ihrer Personendaten erfolgt nur in folgenden Fällen:
-                    </p>
-                    
-                    <h3 className="text-lg font-semibold mt-6">7.1 Auftragsbearbeiter in der Schweiz</h3>
+                    <h3 className="text-lg font-semibold">7.1 Auftragsbearbeiter in der Schweiz</h3>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Payment-Service-Provider (Stripe Schweiz)</li>
                     </ul>
                     <p className="mt-2">
-                      Alle Auftragsbearbeiter sind vertraglich zur Einhaltung der Datenschutzbestimmungen verpflichtet 
-                      und wurden sorgfältig ausgewählt.
+                      Alle Auftragsbearbeiter sind vertraglich zur Einhaltung der Datenschutzbestimmungen verpflichtet und wurden sorgfältig ausgewählt.
                     </p>
 
-                    <h3 className="text-lg font-semibold mt-6">7.2 Gesetzliche Verpflichtungen</h3>
+                    <h3 className="text-lg font-semibold mt-6">7.2 Externe Verarbeitung bei Nutzung externer Modelle</h3>
                     <p>
-                      Bei entsprechender gesetzlicher Grundlage können wir verpflichtet sein, Daten an Behörden 
-                      (Steuerverwaltung, Strafverfolgungsbehörden) bekanntzugeben.
+                      Nur falls Sie ein externes Modell über OpenRouter auswählen oder die Websuche aktivieren: OpenRouter und der jeweils gewählte Modellanbieter.
                     </p>
 
-                    <h3 className="text-lg font-semibold mt-6">7.3 Wichtiger Hinweis</h3>
-                    <p className="font-semibold">
-                      Ihre Audio-Inhalte und Transkripte werden niemals für Schulungszwecke verwendet oder 
-                      an Dritte weitergegeben. Eine kommerzielle Nutzung Ihrer Daten findet nicht statt.
+                    <h3 className="text-lg font-semibold mt-6">7.3 Gesetzliche Verpflichtungen</h3>
+                    <p>
+                      Bei entsprechender gesetzlicher Grundlage können wir verpflichtet sein, Daten an Behörden bekanntzugeben.
+                    </p>
+
+                    <h3 className="text-lg font-semibold mt-6">7.4 Wichtiger Hinweis</h3>
+                    <p>
+                      Ihre Chat-Inhalte, Dokumente und Anhänge werden niemals für Schulungszwecke der Arcon KI verwendet oder an Dritte weitergegeben. Eine kommerzielle Nutzung Ihrer Daten findet nicht statt. Bei Verwendung externer Modelle gelten zusätzlich die Datenschutzbestimmungen des jeweiligen Anbieters.
                     </p>
                   </div>
                 </div>
@@ -293,10 +309,6 @@ export default function DatenschutzPage() {
                 <div>
                   <h2 className="text-2xl font-bold text-foreground mb-6">8. Ihre Rechte nach DSG</h2>
                   <div className="space-y-4 text-foreground">
-                    <p>
-                      Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:
-                    </p>
-                    
                     <div className="space-y-4">
                       <div>
                         <h3 className="font-semibold">Auskunftsrecht (Art. 25 DSG)</h3>
@@ -310,12 +322,12 @@ export default function DatenschutzPage() {
 
                       <div>
                         <h3 className="font-semibold">Löschungsrecht (Art. 32 Abs. 1 DSG)</h3>
-                        <p>Sie können die Löschung Ihrer Personendaten verlangen, soweit keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+                        <p>Sie können selbstständig über Ihr Konto die Löschung Ihres Kontos veranlassen sowie einzelne Unterhaltungen, Dokumente oder Erinnerungen löschen, soweit keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
                       </div>
 
                       <div>
                         <h3 className="font-semibold">Widerspruchsrecht</h3>
-                        <p>Sie können der Bearbeitung Ihrer Daten aus berechtigten Interessen widersprechen.</p>
+                        <p>Sie können der Bearbeitung Ihrer Daten aus berechtigten Interessen widersprechen, z. B. durch Deaktivieren der automatischen Erinnerungsfunktion in den Einstellungen.</p>
                       </div>
 
                       <div>
@@ -326,8 +338,8 @@ export default function DatenschutzPage() {
 
                     <div className="mt-6 ">
                       <h3 className="font-semibold mb-2">Geltendmachung Ihrer Rechte</h3>
-                      <p>Kontaktieren Sie uns telefonisch unter <strong>+41 41 749 10 00</strong> oder postalisch an die oben genannte Adresse.</p>
-                      <p>Wir bearbeiten Ihre Anfrage innerhalb von 3 Tagen.</p>
+                      <p>Kontaktieren Sie uns unter: servicedesk@arcon.ch</p>
+                      <p>Wir bearbeiten Ihre Anfrage innerhalb von 3. Tagen.</p>
                     </div>
                   </div>
                 </div>
@@ -337,14 +349,13 @@ export default function DatenschutzPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">9. Cookies und Tracking</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Unsere Website verwendet ausschliesslich technisch notwendige Cookies:
+                      Die Anmeldesitzung wird technisch notwendig im Browser gespeichert, um Sie eingeloggt zu halten.
                     </p>
                     
-                    <h3 className="text-lg font-semibold">9.1 Notwendige Cookies</h3>
+                    <h3 className="text-lg font-semibold">9.1 Notwendige Cookies/Speicherung</h3>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li>Session-Cookies für die Anmeldung und Sicherheit</li>
-                      <li>Funktions-Cookies für die ordnungsgemässe Funktion der Website</li>
-                      <li>Sicherheits-Cookies zum Schutz vor CSRF-Angriffen</li>
+                      <li>Sitzungsdaten für Anmeldung und Sicherheit</li>
+                      <li>Funktionsdaten für die ordnungsgemässe Funktion der Anwendung</li>
                     </ul>
 
                     <h3 className="text-lg font-semibold mt-4">9.2 Kein Tracking</h3>
@@ -352,7 +363,7 @@ export default function DatenschutzPage() {
                     <ul className="list-disc pl-6 space-y-1">
                       <li>Marketing- oder Tracking-Cookies</li>
                       <li>Analyse-Tools von Drittanbietern</li>
-                      <li>Social Media Plugins</li>
+                      <li>Social-Media-Plugins</li>
                       <li>Retargeting- oder Remarketing-Tools</li>
                     </ul>
                   </div>
@@ -371,8 +382,8 @@ export default function DatenschutzPage() {
                       <p>Feldeggweg 1</p>
                       <p>3003 Bern</p>
                       <p>Telefon: +41 58 462 43 95</p>
-                      <p>E-Mail: info@edoeb.admin.ch</p>
-                      <p>Website: www.edoeb.admin.ch</p>
+                      <p>E-Mail: <a href="mailto:info@edoeb.admin.ch" className="underline">info@edoeb.admin.ch</a></p>
+                      <p>Website: <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener noreferrer" className="underline">www.edoeb.admin.ch</a></p>
                     </div>
                   </div>
                 </div>
@@ -382,16 +393,7 @@ export default function DatenschutzPage() {
                   <h2 className="text-2xl font-bold text-foreground mb-6">11. Änderungen der Datenschutzerklärung</h2>
                   <div className="space-y-4 text-foreground">
                     <p>
-                      Wir behalten uns vor, diese Datenschutzerklärung bei Änderungen der Rechtslage oder 
-                      unserer Services anzupassen.
-                    </p>
-                    <p>
-                      Wesentliche Änderungen werden wir Ihnen per E-Mail mitteilen. Die jeweils aktuelle 
-                      Version ist auf unserer Website verfügbar.
-                    </p>
-                    <p>
-                      Bei wesentlichen Änderungen, die zusätzliche Bearbeitungszwecke betreffen, 
-                      werden wir Ihre Einwilligung einholen.
+                      Wir behalten uns vor, diese Datenschutzerklärung bei Änderungen der Rechtslage oder unserer Services anzupassen. Wesentliche Änderungen werden wir Ihnen mitteilen. Bei wesentlichen Änderungen, die zusätzliche Bearbeitungszwecke betreffen, werden wir Ihre Einwilligung einholen.
                     </p>
                   </div>
                 </div>
@@ -405,11 +407,12 @@ export default function DatenschutzPage() {
                     <p>Hinterbergstrasse 24</p>
                     <p>6312 Steinhausen</p>
                     <p>Schweiz</p>
+                    <p>E-Mail: servicedesk@arcon.ch</p>
                     <p>Telefon: +41 41 749 10 00</p>
                     
                     <div className="mt-4 pt-4 border-t">
                       <p className="text-sm">
-                        <strong>Letzte Aktualisierung:</strong> {new Date().toLocaleDateString('de-CH')}
+                        <strong>Letzte Aktualisierung:</strong> 30.9.2026
                       </p>
                       <p className="text-sm">
                         <strong>Version:</strong> 1.0
