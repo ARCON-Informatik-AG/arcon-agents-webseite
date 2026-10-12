@@ -1,4 +1,4 @@
-const steps = ["Unterlagen bereitstellen", "Aufgabe festlegen", "Im Team nutzen"];
+import IntegrationsBeamDiagram from "@/components/integrations-beam-diagram";
 
 export default function AssistantsSection() {
   return (
@@ -26,22 +26,8 @@ export default function AssistantsSection() {
           </p>
         </div>
 
-        <div className="rounded-2xl border bg-background p-8">
-          <p className="text-sm font-medium text-gray-700">Kurzer Ablauf</p>
-          <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-3">
-            {steps.map((step, index) => (
-              <div key={step} className="flex items-center gap-3">
-                <span className="rounded-full border px-4 py-2 text-sm font-medium">
-                  {step}
-                </span>
-                {index < 2 && (
-                  <span className="hidden text-gray-400 sm:inline" aria-hidden="true">
-                    →
-                  </span>
-                )}
-              </div>
-            ))}
-          </div>
+        <div className="lg:order-first">
+          <IntegrationsBeamDiagram />
         </div>
       </div>
     </section>

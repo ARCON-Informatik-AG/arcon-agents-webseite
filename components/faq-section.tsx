@@ -55,7 +55,7 @@ export default function FaqSection() {
           </p>
         </div>
 
-        <div className="bg-background/50 backdrop-blur-sm rounded-2xl border border-border/50 p-8 animate-fade-in-up animation-delay-200">
+        <div className="bg-background/50 backdrop-blur-sm rounded-2xl border border-gray-200 p-8 animate-fade-in-up animation-delay-200">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem

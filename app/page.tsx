@@ -29,7 +29,7 @@ export default function LandingPage() {
       <UseCasesSection />
       <WhyArconSection />
       <AssistantsSection />
-      <IntegrationsSection />
+      {/* <IntegrationsSection /> */}
       <PlatformSection />
       <GettingStartedSection />
       <PricingSection />

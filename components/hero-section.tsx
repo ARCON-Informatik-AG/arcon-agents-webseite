@@ -122,15 +122,11 @@ export default function HeroSection() {
                     gegen Beleg erstattet. Reichen Sie die Abrechnung über
                     das interne Formular innerhalb von 30 Tagen ein.
                   </p>
-                  <span className="mt-2 inline-block rounded-full bg-white px-2.5 py-1 text-xs text-gray-500 ring-1 ring-gray-200">
+                  <span className="mt-2 inline-block rounded-full bg-white px-2.5 py-1 text-xs text-gray-700 ring-1 ring-gray-200">
                     Quelle: Spesenreglement.pdf, S. 3
                   </span>
                 </div>
               </div>
-
-              <p className="mt-5 text-xs text-gray-500">
-                Fiktive Inhalte zur Veranschaulichung.
-              </p>
             </CardContent>
           </Card>
         </div>
