@@ -92,7 +92,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <ButtonArrow href={BOOKINGS_URL} target="_blank" name="Kostenlos Testen" />
-            <ButtonArrowWhite href="/#anwendungsfaelle" name="Demo Buchen" />
+            <ButtonArrowWhite href={BOOKINGS_URL} name="Demo Buchen" />
           </div>
         </div>
 
