@@ -50,7 +50,7 @@ const Footer = () => {
                   href="/#daten-vertrauen"
                   className="hover:text-[#1bcb80] transition-colors"
                 >
-                  Daten &amp; Vertrauen
+                  Sicherheit
                 </Link>
               </li>
               <li>

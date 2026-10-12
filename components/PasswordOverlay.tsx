@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
-const PASSWORD = "letmein2233asap"; // Change this to your desired password
-const STORAGE_KEY = "maw_pw";
+import { ACCESS_PASSWORD, ACCESS_STORAGE_KEY } from "@/lib/constants";
 
 export function PasswordOverlay({ onUnlock }: { onUnlock: () => void }) {
   const [input, setInput] = useState("");
@@ -10,8 +8,8 @@ export function PasswordOverlay({ onUnlock }: { onUnlock: () => void }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (input === PASSWORD) {
-      localStorage.setItem(STORAGE_KEY, "1");
+    if (input === ACCESS_PASSWORD) {
+      localStorage.setItem(ACCESS_STORAGE_KEY, "1");
       onUnlock();
     } else {
       setError("Falsches Passwort");
@@ -38,6 +36,7 @@ export function PasswordOverlay({ onUnlock }: { onUnlock: () => void }) {
         <input
           id="pw"
           type="password"
+          autoComplete="current-password"
           value={input}
           onChange={e => { setInput(e.target.value); setError(""); }}
           style={{ padding: 8, borderRadius: 4, border: "1px solid #ccc" }}

@@ -9,10 +9,10 @@ import { BOOKINGS_URL } from "@/lib/constants";
 
 const NAV_LINKS = [
   { href: "/#anwendungsfaelle", label: "Anwendungen" },
-  { href: "/#integrationen", label: "Integrationen" },
-  { href: "/#warum-arcon", label: "Warum Arcon" },
-  { href: "/#daten-vertrauen", label: "Daten & Vertrauen" },
-  { href: "/#einstieg", label: "Einstieg" },
+  { href: "/#pricing", label: "Preise" },
+  { href: "/#warum-arcon", label: "Warum Arcon Agents" },
+  { href: "/#daten-vertrauen", label: "Sicherheit" },
+  { href: "/#onboarding", label: "Onboarding" },
 ];
 
 const Header = () => {

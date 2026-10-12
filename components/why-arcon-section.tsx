@@ -24,7 +24,7 @@ export default function WhyArconSection() {
             Ihre KI-Plattform. Unser Team dahinter.
           </h2>
           <p className="mt-5 text-lg leading-8 text-gray-900">
-            Arcon entwickelt die Plattform, verbindet Ihre Anwendungen und
+            Arcon entwickelt die Plattform stetig weiter, verbindet Ihre Daten und Anwendungen und
             begleitet Ihr Team bei der Nutzung. Entwicklung, Einführung,
             Hosting und Betreuung kommen aus einer Hand.
           </p>

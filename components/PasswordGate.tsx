@@ -1,24 +1,17 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { ACCESS_STORAGE_KEY } from "@/lib/constants";
 import { PasswordOverlay } from "./PasswordOverlay";
 
-const STORAGE_KEY = "maw_pw";
-
 export function PasswordGate({ children }: { children: React.ReactNode }) {
-  const [unlocked, setUnlocked] = useState(false);
+  // null = not yet checked, avoids flashing the overlay for already-unlocked visitors
+  const [unlocked, setUnlocked] = useState<boolean | null>(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (localStorage.getItem(STORAGE_KEY) === "1") {
-        setUnlocked(true);
-      }
-    }
+    setUnlocked(localStorage.getItem(ACCESS_STORAGE_KEY) === "1");
   }, []);
 
-  return (
-    <>
-      {!unlocked && <PasswordOverlay onUnlock={() => setUnlocked(true)} />}
-      {unlocked && children}
-    </>
-  );
+  if (unlocked === null) return null;
+  if (!unlocked) return <PasswordOverlay onUnlock={() => setUnlocked(true)} />;
+  return <>{children}</>;
 }

@@ -18,7 +18,7 @@ const steps = [
 
 export default function GettingStartedSection() {
   return (
-    <section id="einstieg" className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-12">
+    <section id="onboarding" className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <h2 className="max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">
           Starten Sie mit einer Aufgabe, die sich zu lösen lohnt.
