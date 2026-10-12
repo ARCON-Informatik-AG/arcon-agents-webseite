@@ -63,7 +63,7 @@ export default function SwissQualitySection() {
   };
 
   return (
-    <section id="daten-vertrauen" className="px-4 sm:px-6 lg:px-12">
+    <section id="daten-vertrauen" className="bg-gray-50 px-4 sm:px-6 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <Card className="border-1 bg-card/50 backdrop-blur-sm shadow-sm animate-fade-in-up">
           <CardContent className="p-8 lg:p-12">

@@ -42,13 +42,13 @@ export const faqs = [
 
 export default function FaqSection() {
   return (
-    <section id="faq" className="px-4 py-20 sm:px-6 lg:px-12">
+    <section id="faq" className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-12">
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
             Fragen & Antworten
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-800 max-w-2xl mx-auto">
             Hier finden Sie Antworten auf die häufigsten Fragen zu unserem
             Meeting Agent. Haben Sie weitere Fragen? Kontaktieren Sie uns
             gerne.

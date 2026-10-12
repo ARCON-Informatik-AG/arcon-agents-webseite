@@ -1,9 +1,57 @@
-import Link from "next/link";
+import Image from "next/image";
 import ButtonArrow from "@/components/ui/button-arrow";
+import ButtonArrowWhite from "@/components/ui/button-arrow-white";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles } from "lucide-react";
+import { Bot } from "lucide-react";
 import { BOOKINGS_URL } from "@/lib/constants";
+import {
+  AgentNetwork,
+  type AgentLink,
+  type AgentNode,
+} from "@/components/agent-network";
+
+const agentNodes: AgentNode[] = [
+  { id: "h1", x: 120, y: 160, hub: true },
+  { id: "h2", x: 430, y: 90, hub: true },
+  { id: "h3", x: 760, y: 150, hub: true },
+  { id: "h4", x: 1090, y: 110, hub: true },
+  { id: "h5", x: 60, y: 430, hub: true },
+  { id: "h6", x: 640, y: 400, hub: true },
+  { id: "h7", x: 980, y: 420, hub: true },
+  { id: "h8", x: 200, y: 700, hub: true },
+  { id: "h9", x: 560, y: 640, hub: true },
+  { id: "h10", x: 900, y: 700, hub: true },
+  { id: "s1", x: 60, y: 330 },
+  { id: "s2", x: 250, y: 260 },
+  { id: "s3", x: 370, y: 250 },
+  { id: "s4", x: 560, y: 250 },
+  { id: "s5", x: 830, y: 280 },
+  { id: "s6", x: 1000, y: 230 },
+  { id: "s7", x: 1160, y: 300 },
+  { id: "s8", x: 400, y: 560 },
+  { id: "s9", x: 760, y: 560 },
+  { id: "s10", x: 1040, y: 540 },
+  { id: "s11", x: 120, y: 520 },
+  { id: "s12", x: 520, y: 760 },
+  { id: "s13", x: 700, y: 740 },
+  { id: "s14", x: 1150, y: 720 },
+];
+
+const agentLinks: AgentLink[] = [
+  ["h1", "h2"], ["h2", "h3"], ["h3", "h4"],
+  ["h1", "s1"], ["s1", "s11"], ["s11", "h5"],
+  ["h1", "s2"], ["s2", "h2"], ["s2", "h5"],
+  ["h2", "s3"], ["s3", "s4"], ["s4", "h3"],
+  ["s4", "h6"], ["h3", "s5"], ["s5", "s6"], ["s6", "h4"],
+  ["s6", "h7"], ["h4", "s7"], ["s7", "h7"],
+  ["h5", "h6"], ["h6", "h7"], ["h5", "s8"], ["s8", "h9"],
+  ["h6", "s9"], ["s9", "h7"], ["s9", "h9"],
+  ["h9", "h8"], ["h8", "s12"], ["s12", "h9"], ["s12", "s13"],
+  ["s13", "h10"], ["h10", "h9"], ["h10", "s14"],
+  ["h7", "s10"], ["s10", "s14"], ["s8", "s11"], ["h8", "s11"],
+  ["h9", "s13"], ["s13", "s9"],
+];
 
 export default function HeroSection() {
   return (
@@ -11,27 +59,25 @@ export default function HeroSection() {
       id="home"
       className="relative flex min-h-[100dvh] flex-col justify-center overflow-hidden px-4 py-20 pt-28 text-white sm:px-6 sm:pt-32 lg:px-12"
     >
-      {/* Animated background: gradient mesh + floating shapes (section has no bg-color of its own, so it can't paint over this -z-10 layer) */}
+      {/* No section bg-color, so this -z-10 layer stays visible */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#004132] via-[#00583d] to-[#004132]" />
-
-        <div className="absolute top-20 left-20 h-4 w-4 rounded-full bg-white/10 animate-float-random-1 animation-delay-500" />
-        <div className="absolute top-40 right-40 h-6 w-6 rounded-square bg-white/10 animate-float-random-2 animation-delay-700" />
-        <div className="absolute bottom-40 left-40 h-3 w-3 rounded-full bg-white/10 animate-float-random-3 animation-delay-1200" />
-        <div className="absolute bottom-20 right-20 h-5 w-5 rounded-square bg-white/10 animate-float-random-4 animation-delay-1500" />
-
-        <div className="absolute top-1/3 left-1/3 h-2 w-2 rounded-full bg-white/10 animate-drift-horizontal animation-delay-2000" />
-        <div className="absolute top-2/3 right-1/3 h-3 w-3 rounded-square bg-white/10 animate-drift-diagonal animation-delay-3000" />
-        <div className="absolute top-1/2 left-16 h-4 w-4 rounded-full bg-white/10 animate-float-random-1 animation-delay-4000" />
-        <div className="absolute bottom-1/3 right-16 h-2 w-2 rounded-square bg-white/10 animate-float-random-3 animation-delay-1000" />
+        <div className="absolute inset-0 bg-arcon-dark-green" />
+        <AgentNetwork nodes={agentNodes} links={agentLinks} skipPulseEvery={3} />
       </div>
 
       <div className="mx-auto grid w-full max-w-7xl gap-16 lg:grid-cols-[1.05fr_1fr] lg:items-center">
         <div className="animate-fade-in-up">
           <Badge
             variant="secondary"
-            className="mb-6 border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white"
+            className="mb-6 gap-2 border-white/20 bg-white/10 px-3 py-1.5 text-sm font-medium text-white"
           >
+            <Image
+              src="/swiss-flag.png"
+              alt="Schweizer Flagge"
+              width={16}
+              height={16}
+              className="inline-block"
+            />
             Die Schweizer KI-Plattform für Unternehmen
           </Badge>
           <h1 className="max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
@@ -45,17 +91,9 @@ export default function HeroSection() {
             gehostet.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <ButtonArrow href={BOOKINGS_URL} target="_blank" name="Persönliche Demo anfragen" />
-            <Link
-              href="/#anwendungsfaelle"
-              className="text-base font-medium text-white underline underline-offset-4 hover:text-[#1bcb80]"
-            >
-              Anwendungsfälle entdecken
-            </Link>
+            <ButtonArrow href={BOOKINGS_URL} target="_blank" name="Kostenlos Testen" />
+            <ButtonArrowWhite href="/#anwendungsfaelle" name="Demo Buchen" />
           </div>
-          <p className="mt-4 text-sm text-white/60">
-            Unverbindlich. Mit Ihrem Anwendungsfall im Mittelpunkt.
-          </p>
         </div>
 
         {/* Example dialog mockup – illustrative only, no real product screenshot exists */}
@@ -64,8 +102,8 @@ export default function HeroSection() {
             <CardContent className="p-6 sm:p-7">
               <div className="mb-5 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1bcb80]/15 text-[#005f41]">
-                    <Sparkles className="h-4 w-4" aria-hidden="true" />
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#1bcb80]/15 text-arcon-light-green">
+                    <Bot className="h-4 w-4" aria-hidden="true" />
                   </span>
                   <span className="font-semibold">Wissensassistent</span>
                 </div>

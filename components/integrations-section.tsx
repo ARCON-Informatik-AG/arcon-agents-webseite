@@ -23,14 +23,14 @@ export default function IntegrationsSection() {
           </p>
 
           <div className="mt-8">
-            <ButtonArrow href={BOOKINGS_URL} target="_blank" name="Ihren Anwendungsfall besprechen" />
+            <ButtonArrow href={BOOKINGS_URL} target="_blank" name="Ihren Anwendungsfall besprechen" variant="dark" />
           </div>
         </div>
 
         <div className="space-y-6">
           <div className="flex gap-4 rounded-xl border p-5">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#1bcb80]/10 text-[#005f41]">
-              <Plug className="h-5 w-5" aria-hidden="true" />
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-arcon-dark-green text-white">
+              <Plug className="h-5 w-5 text-arcon-light-green" aria-hidden="true" />
             </span>
             <div>
               <h3 className="font-semibold">Abacus trifft KI</h3>
@@ -42,8 +42,8 @@ export default function IntegrationsSection() {
             </div>
           </div>
           <div className="flex gap-4 rounded-xl border p-5">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#1bcb80]/10 text-[#005f41]">
-              <Workflow className="h-5 w-5" aria-hidden="true" />
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-arcon-dark-green text-white">
+              <Workflow className="h-5 w-5 text-arcon-light-green" aria-hidden="true" />
             </span>
             <div>
               <h3 className="font-semibold">Ihre weiteren Anwendungen</h3>
@@ -55,8 +55,8 @@ export default function IntegrationsSection() {
             </div>
           </div>
           <div className="flex gap-4 rounded-xl border p-5">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#1bcb80]/10 text-[#005f41]">
-              <Users2 className="h-5 w-5" aria-hidden="true" />
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-arcon-dark-green text-white">
+              <Users2 className="h-5 w-5 text-arcon-light-green" aria-hidden="true" />
             </span>
             <div>
               <h3 className="font-semibold">Ein Ansprechpartner für die Umsetzung</h3>

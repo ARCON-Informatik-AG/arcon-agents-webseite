@@ -39,7 +39,7 @@ export default function PlatformSection() {
               className="gap-3 border bg-background shadow-sm transition-all duration-300 hover:shadow-xl"
             >
               <CardHeader>
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#1bcb80]/10 text-[#005f41]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-arcon-dark-green text-arcon-light-green">
                   {feature.icon}
                 </div>
                 <CardTitle className="mt-4 text-large">{feature.title}</CardTitle>

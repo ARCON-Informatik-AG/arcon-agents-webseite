@@ -31,7 +31,7 @@ export default function GettingStartedSection() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="mt-2 text-lg font-semibold">{step.title}</h3>
-              <p className="mt-2 text-base leading-7 text-gray-700">{step.text}</p>
+              <p className="mt-2 text-base leading-7 text-gray-800">{step.text}</p>
             </li>
           ))}
         </ol>
@@ -41,7 +41,7 @@ export default function GettingStartedSection() {
             <h3 className="text-xl font-semibold">
               Klare Leistungen. Nachvollziehbare Kosten.
             </h3>
-            <p className="mt-3 text-base leading-7 text-gray-700">
+            <p className="mt-3 text-base leading-7 text-gray-800">
               Sie erhalten eine Offerte mit klar ausgewiesenen Kosten für
               die Plattformnutzung, die Einrichtung und gewünschte
               Integrationen. Den Umfang der persönlichen Betreuung stimmen

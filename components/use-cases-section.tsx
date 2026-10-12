@@ -39,11 +39,11 @@ export default function UseCasesSection() {
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-border sm:grid-cols-3">
           {useCases.map((useCase) => (
             <div key={useCase.title} className="bg-background p-8 sm:first:pl-0">
-              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#1bcb80]/10 text-[#005f41]">
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-arcon-dark-green text-arcon-light-green">
                 {useCase.icon}
               </span>
               <h3 className="mt-5 text-lg font-semibold">{useCase.title}</h3>
-              <p className="mt-3 text-base leading-7 text-gray-700">{useCase.text}</p>
+              <p className="mt-3 text-base leading-7 text-gray-800">{useCase.text}</p>
             </div>
           ))}
         </div>

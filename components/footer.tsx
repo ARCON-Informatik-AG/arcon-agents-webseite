@@ -7,7 +7,7 @@ import { BOOKINGS_URL } from "@/lib/constants";
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-muted/50 px-6 pt-12 pb-4 sm:px-8 lg:px-12" role="contentinfo">
+    <footer className="border-t border-white/20 bg-arcon-dark-green px-6 pt-12 pb-4 text-white sm:px-8 lg:px-12" role="contentinfo">
       <div className="mx-auto max-w-7xl animate-fade-in-up">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
@@ -128,7 +128,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="mt-8 pt-4 border-t border-gray-200 text-xs sm:text-sm text-gray-600 text-center sm:text-left">
+        <div className="mt-8 pt-4 border-t border-white/20 text-xs sm:text-sm text-white/70 text-center sm:text-left">
           © 2026 ARCON Informatik AG. Alle Rechte vorbehalten. Made in
           Switzerland.
         </div>

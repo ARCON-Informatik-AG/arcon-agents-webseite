@@ -42,6 +42,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --color-arcon-dark-green: #004132;
+  --color-arcon-light-green: #1bcb80;
 
   /* Custom animation keyframes */
   --animate-fade-in: fade-in 1s ease-out;
@@ -283,6 +284,15 @@
   }
 }
 
+@keyframes agentPulse {
+  from {
+    stroke-dashoffset: 12;
+  }
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
 /* Animation utility classes */
 .animate-fade-in {
   animation: fadeIn 1s ease-out;
@@ -323,6 +333,10 @@
 
 .animate-drift-diagonal {
   animation: driftDiagonal 14s ease-in-out infinite;
+}
+
+.animate-agent-pulse {
+  animation: agentPulse 4s linear infinite both;
 }
 
 .animate-carousel-scroll {

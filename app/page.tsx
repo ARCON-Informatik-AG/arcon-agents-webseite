@@ -11,6 +11,7 @@ import WhyArconSection from "@/components/why-arcon-section";
 import SwissQualitySection from "@/components/swiss-quality-section";
 import ContactCtaSection from "@/components/contact-cta-section";
 import GettingStartedSection from "@/components/getting-started-section";
+import PricingSection from "@/components/pricing-section";
 import FaqSection, { faqs } from "@/components/faq-section";
 
 export const metadata: Metadata = {
@@ -26,11 +27,12 @@ export default function LandingPage() {
       <Header />
       <HeroSection />
       <UseCasesSection />
+      <WhyArconSection />
       <AssistantsSection />
       <IntegrationsSection />
       <PlatformSection />
-      <WhyArconSection />
       <GettingStartedSection />
+      <PricingSection />
       <FaqSection />
       <SwissQualitySection />
       <ContactCtaSection />
