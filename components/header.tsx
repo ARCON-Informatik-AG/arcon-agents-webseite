@@ -9,8 +9,9 @@ import { BOOKINGS_URL } from "@/lib/constants";
 
 const NAV_LINKS = [
   { href: "/#anwendungsfaelle", label: "Anwendungen" },
+  { href: "/#plattform", label: "Funktionen" },
   { href: "/#pricing", label: "Preise" },
-  { href: "/#warum-arcon", label: "Warum Arcon Agents" },
+  { href: "/news", label: "News" },
   { href: "/#daten-vertrauen", label: "Sicherheit" },
   { href: "/#onboarding", label: "Onboarding" },
 ];

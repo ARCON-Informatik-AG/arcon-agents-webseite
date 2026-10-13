@@ -29,7 +29,7 @@ export default function IntegrationsBeamDiagram() {
         </div>
         <div className="relative flex items-center gap-3 rounded-xl border bg-white px-4 py-3 shadow-sm">
           <Users2 className="h-5 w-5 text-arcon-dark-green" aria-hidden="true" />
-          <span className="text-sm font-medium">Fachanwendungen</span>
+          <span className="text-sm font-medium">User</span>
           <span ref={appsAnchorRef} aria-hidden="true" className="absolute right-0 top-1/2 h-0 w-0" />
         </div>
       </div>

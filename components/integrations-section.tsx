@@ -46,10 +46,10 @@ export default function IntegrationsSection() {
               <Workflow className="h-5 w-5 text-arcon-light-green" aria-hidden="true" />
             </span>
             <div>
-              <h3 className="font-semibold">Ihre weiteren Anwendungen</h3>
+              <h3 className="font-semibold">Schnittstellen</h3>
               <p className="mt-1.5 text-base leading-7 text-gray-800">
                 Ob bestehende Datenquellen oder individuelle
-                Fachanwendungen: Wir prüfen die Möglichkeiten und entwickeln
+                Schnittstellen: Wir prüfen die Möglichkeiten und entwickeln
                 eine Integration, die zu Ihren Prozessen passt.
               </p>
             </div>
