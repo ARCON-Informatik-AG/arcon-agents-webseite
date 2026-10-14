@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { href: "/#plattform", label: "Funktionen" },
   { href: "/#pricing", label: "Preise" },
   { href: "/news", label: "News" },
-  { href: "/#daten-vertrauen", label: "Sicherheit" },
+  { href: "/unternehmen", label: "Unternehmen" },
   { href: "/#onboarding", label: "Onboarding" },
 ];
 

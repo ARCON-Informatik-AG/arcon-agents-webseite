@@ -67,6 +67,14 @@ const Footer = () => {
             <h4 className="font-semibold text-lg">Unternehmen</h4>
             <ul className="mt-3 space-y-2 text-base">
               <li>
+                <Link
+                  href="/unternehmen"
+                  className="hover:text-[#1bcb80] transition-colors"
+                >
+                  Unternehmen
+                </Link>
+              </li>
+              <li>
                 <a
                   href={BOOKINGS_URL}
                   target="_blank"
