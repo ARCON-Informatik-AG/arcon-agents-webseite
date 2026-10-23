@@ -1,7 +1,7 @@
 services:
   arcon-agents-webseite:
     container_name: arcon-agents-webseite
-    image: ghcr.io/philippefuhrer/arcon-agents-webseite:1.0.0
+    image: ghcr.io/philippefuhrer/arcon-agents-webseite:1.0.1
     build:
       context: .
     ports:
