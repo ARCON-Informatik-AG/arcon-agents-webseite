@@ -78,7 +78,7 @@ export default function HeroSection() {
               height={16}
               className="inline-block"
             />
-            Die Schweizer KI-Plattform für Unternehmen
+            Die Schweizer KI-Plattform für KMU
           </Badge>
           <h1 className="max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
             KI, die Ihr Unternehmen kennt. Und Ihr Team entlastet.
