@@ -45,7 +45,7 @@ export default function PlatformSection() {
                 <CardTitle className="mt-4 text-large">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base leading-7 text-gray-700">{feature.text}</p>
+                <p className="text-base leading-7 text-gray-800">{feature.text}</p>
               </CardContent>
             </Card>
           ))}

@@ -17,6 +17,7 @@ import {
   type AgentLink,
   type AgentNode,
 } from "@/components/agent-network";
+import { useAnimatedPrice } from "@/hooks/use-animated-price";
 
 type BillingCycle = "monthly" | "yearly";
 
@@ -127,11 +128,12 @@ function PlanPrice({
 }) {
   const isYearly = billingCycle === "yearly";
   const price = isYearly ? plan.priceYearly : plan.priceMonthly;
+  const animatedPrice = useAnimatedPrice(price);
 
   return (
     <>
       <span className="text-3xl font-bold text-[#1bcb80]">
-        CHF {price?.toLocaleString("de-CH")}
+        CHF {animatedPrice?.toLocaleString("de-CH")}
       </span>
       <span className="ml-1 text-sm text-gray-600">
         {isYearly ? "/ Jahr" : "/ Monat"}

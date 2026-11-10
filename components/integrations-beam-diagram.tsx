@@ -19,17 +19,17 @@ export default function IntegrationsBeamDiagram() {
       <div className="flex flex-col gap-10">
         <div className="relative flex items-center gap-3 rounded-xl border bg-white px-4 py-3 shadow-sm">
           <Plug className="h-5 w-5 text-arcon-dark-green" aria-hidden="true" />
-          <span className="text-sm font-medium">Abacus</span>
+          <span className="text-sm font-medium">Microsoft 365</span>
           <span ref={abacusAnchorRef} aria-hidden="true" className="absolute right-0 top-1/2 h-0 w-0" />
         </div>
         <div className="relative flex items-center gap-3 rounded-xl border bg-white px-4 py-3 shadow-sm">
           <Workflow className="h-5 w-5 text-arcon-dark-green" aria-hidden="true" />
-          <span className="text-sm font-medium">Datenquellen</span>
+          <span className="text-sm font-medium">Abacus</span>
           <span ref={dataAnchorRef} aria-hidden="true" className="absolute right-0 top-1/2 h-0 w-0" />
         </div>
         <div className="relative flex items-center gap-3 rounded-xl border bg-white px-4 py-3 shadow-sm">
           <Users2 className="h-5 w-5 text-arcon-dark-green" aria-hidden="true" />
-          <span className="text-sm font-medium">User</span>
+          <span className="text-sm font-medium">Confluence</span>
           <span ref={appsAnchorRef} aria-hidden="true" className="absolute right-0 top-1/2 h-0 w-0" />
         </div>
       </div>
