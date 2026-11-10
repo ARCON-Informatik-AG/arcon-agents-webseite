@@ -7,26 +7,27 @@ import { Badge } from "@/components/ui/badge";
 import SwissQualitySection from "@/components/swiss-quality-section";
 import ContactCtaSection from "@/components/contact-cta-section";
 import ValuesCarouselSection from "@/components/values-carousel-section";
+import AnimatedStat from "@/components/animated-stat";
 import { Milestone, Users, Handshake, ShieldCheck, Flag } from "lucide-react";
 
 const companyStats = [
   {
-    icon: <Milestone className="h-5 w-5" />,
+    icon: <Milestone className="h-6 w-6" />,
     value: "35+",
     label: "Jahre am Markt",
   },
   {
-    icon: <Users className="h-5 w-5" />,
+    icon: <Users className="h-6 w-6" />,
     value: "65+",
     label: "Mitarbeitende",
   },
   {
-    icon: <Handshake className="h-5 w-5" />,
+    icon: <Handshake className="h-6 w-6" />,
     value: "1000+",
     label: "Kundinnnen und Kunden",
   },
   {
-    icon: <Flag className="h-5 w-5" />,
+    icon: <Flag className="h-6 w-6" />,
     value: "100%",
     label: "Schweizer Hosting",
   },
@@ -121,11 +122,14 @@ export default function UnternehmenPage() {
                   key={stat.label}
                   className="rounded-2xl border border-border bg-background p-6"
                 >
-                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-arcon-dark-green text-arcon-light-green">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-arcon-dark-green text-white">
                     {stat.icon}
                   </span>
-                  <p className="mt-5 text-2xl font-bold tracking-tight">{stat.value}</p>
-                  <p className="mt-2 text-base leading-7 text-gray-900">{stat.label}</p>
+                  <AnimatedStat
+                    value={stat.value}
+                    className="mt-5 text-2xl font-bold tracking-tight"
+                  />
+                  <p className="mt-2 text-md leading-7 text-gray-900">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -156,6 +160,7 @@ export default function UnternehmenPage() {
                 href="https://www.arcon.ch"
                 target="_blank"
                 name="Mehr Informationen"
+                variant="dark"
               />
             </div>
           </div>
