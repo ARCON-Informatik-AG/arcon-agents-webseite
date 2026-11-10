@@ -81,14 +81,10 @@ export default function HeroSection() {
             Die Schweizer KI-Plattform für KMU
           </Badge>
           <h1 className="max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            KI, die Ihr Unternehmen kennt. Und Ihr Team entlastet.
+            KI für Ihr KMU. Vertrauliche Daten bleiben in der Schweiz.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-white/90 sm:text-xl">
-            Finden Sie Antworten in Ihren Unternehmensunterlagen, erstellen
-            Sie Inhalte und verbinden Sie KI mit Ihren Geschäftsanwendungen.
-            Mit Arcon Agents erhalten Sie eine KI-Plattform, die zu Ihrem
-            Arbeitsalltag passt – persönlich betreut und in der Schweiz
-            gehostet.
+            Nutzen Sie verschiedene Frontier-Modelle und unsere eigene Arcon KI auf einer Plattform. Bei Nutzung der Arcon KI werden Ihre Daten ausschliesslich in der Schweiz verarbeitet und gespeichert, ohne Datenabfluss ins Ausland. Binden Sie Ihr Unternehmenswissen ein und erstellen Sie eigene Agenten für die Aufgaben Ihres Teams.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <ButtonArrow href={BOOKINGS_URL} target="_blank" name="Kostenlos Testen" />

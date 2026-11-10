@@ -27,12 +27,10 @@ export default function UseCasesSection() {
       <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Was wäre, wenn Ihr Team weniger suchen und mehr erledigen könnte?
+            Weniger suchen. Informationen schneller nutzen.
           </h2>
           <p className="mt-5 text-lg leading-8 text-gray-800">
-            Wissen schneller finden, Routineaufgaben vereinfachen und
-            Informationen verständlich aufbereiten: Arcon Agents unterstützt
-            Ihr Team dort, wo im Alltag Zeit verloren geht.
+            Antworten in Unternehmensunterlagen finden, Inhalte vorbereiten und Daten auswerten: Arcon Agents unterstützt Ihr Team bei täglichen Aufgaben. Für vertrauliche Informationen steht Ihnen die Arcon KI mit ausschliesslicher Verarbeitung und Speicherung in der Schweiz zur Verfügung.
           </p>
         </div>
 

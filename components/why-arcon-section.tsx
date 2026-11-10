@@ -3,7 +3,7 @@ import Image from "next/image";
 const carePoints = [
   {
     title: "Wir machen den Einstieg gemeinsam.",
-    text: "Wir identifizieren passende Anwendungen, unterstützen bei der Aufbereitung Ihrer Unterlagen und richten Ihre ersten Assistenten mit Ihnen ein.",
+    text: "Wir identifizieren passende Anwendungen, unterstützen bei der Aufbereitung Ihrer Unterlagen und richten die ersten Agenten mit Ihnen ein. Dabei berücksichtigen wir Ihre Anforderungen an die Datenverarbeitung.",
   },
   {
     title: "Sie erreichen Menschen, die Ihre Lösung kennen.",

@@ -7,6 +7,30 @@ import { Badge } from "@/components/ui/badge";
 import SwissQualitySection from "@/components/swiss-quality-section";
 import ContactCtaSection from "@/components/contact-cta-section";
 import ValuesCarouselSection from "@/components/values-carousel-section";
+import { Milestone, Users, Handshake, ShieldCheck, Flag } from "lucide-react";
+
+const companyStats = [
+  {
+    icon: <Milestone className="h-5 w-5" />,
+    value: "35+",
+    label: "Jahre am Markt",
+  },
+  {
+    icon: <Users className="h-5 w-5" />,
+    value: "65+",
+    label: "Mitarbeitende",
+  },
+  {
+    icon: <Handshake className="h-5 w-5" />,
+    value: "1000+",
+    label: "Kundinnnen und Kunden",
+  },
+  {
+    icon: <Flag className="h-5 w-5" />,
+    value: "100%",
+    label: "Schweizer Hosting",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Unternehmen",
@@ -78,8 +102,34 @@ export default function UnternehmenPage() {
         <section className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-12">
           <div className="mx-auto max-w-7xl animate-fade-in-up">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Ihr Partner für durchdachte Digitalisierung
+              Ihr Partner für durchdachte Digitalisierung.
             </h2>
+
+            <div className="relative mt-8 aspect-[21/9] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/arcon-images/arcon_mitarbeitende_foto.jpg"
+                alt="Das Team der Arcon Informatik AG"
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {companyStats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="rounded-2xl border border-border bg-background p-6"
+                >
+                  <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-arcon-dark-green text-arcon-light-green">
+                    {stat.icon}
+                  </span>
+                  <p className="mt-5 text-2xl font-bold tracking-tight">{stat.value}</p>
+                  <p className="mt-2 text-base leading-7 text-gray-900">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+
             <div className="mt-6 space-y-5 text-lg leading-8 text-gray-800">
               <p>
                 Arcon ist Ihr Partner für durchdachte Digitalisierung. Seit
@@ -103,7 +153,7 @@ export default function UnternehmenPage() {
             </div>
             <div className="mt-10">
               <ButtonArrow
-                href="https://www.arcn.ch"
+                href="https://www.arcon.ch"
                 target="_blank"
                 name="Mehr Informationen"
               />

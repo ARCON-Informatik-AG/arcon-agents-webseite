@@ -11,7 +11,7 @@ export const faqs = [
   {
     question: "Wir nutzen bereits KI. Was bringt uns Arcon Agents zusätzlich?",
     answer:
-      "Arcon Agents verbindet die Nutzung verschiedener KI-Modelle mit Ihren eigenen Assistenten, Ihrem Unternehmenswissen und individuellen Integrationen. Unser Team begleitet Sie bei der Einrichtung und im laufenden Einsatz.",
+      "Arcon Agents verbindet die Nutzung verschiedener KI-Modelle mit Ihren eigenen Assistenten, Ihrem Unternehmenswissen und individuellen Integrationen. Unser Team begleitet Sie bei der Einrichtung und im laufenden Einsatz. Zudem werden Ihre Daten bei der Verwendung der Arcon KI ausschliesslich in der Schweiz verarbeitet, ideal für sensible Aufgaben.",
   },
   {
     question: "Müssen wir eigene KI-Kenntnisse mitbringen?",
@@ -31,12 +31,12 @@ export const faqs = [
   {
     question: "Bleiben alle Daten in der Schweiz?",
     answer:
-      "Die Plattform wird in der Schweiz gehostet. Wo Inhalte verarbeitet werden, hängt zusätzlich von den gewählten KI-Modellen und Funktionen ab. Wir klären mit Ihnen, welche Konfiguration zu Ihren Anforderungen passt.",
+      "Die Plattform wird in der Schweiz gehostet. Wo Inhalte verarbeitet werden, hängt zusätzlich von den gewählten KI-Modellen und Funktionen ab. Wir klären mit Ihnen, welche Konfiguration zu Ihren Anforderungen passt. Zudem werden Ihre Daten bei der Verwendung der Arcon KI ausschliesslich in der Schweiz verarbeitet, ideal für sensible Aufgaben.",
   },
   {
     question: "Können wir die Lösung vor einer Einführung kennenlernen?",
     answer:
-      "Ja. In einer persönlichen Demo erhalten Sie einen Einblick in die Plattform. Anschliessend können wir einen Pilot mit klar definiertem Umfang vereinbaren.",
+      "Ja. In einer persönlichen Demo erhalten Sie einen Einblick in die Plattform. Gleichzeitig haben Sie die Möglichkeit, die Plattform selbst zu testen. Anschliessend kann es losgehen und Sie können Ihre Agenten direkt einsetzen.",
   },
 ];
 
