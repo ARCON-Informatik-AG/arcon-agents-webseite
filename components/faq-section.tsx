@@ -49,8 +49,8 @@ export default function FaqSection() {
             Fragen & Antworten
           </h2>
           <p className="text-lg text-gray-800 max-w-2xl mx-auto">
-            Hier finden Sie Antworten auf die häufigsten Fragen zu unserem
-            Meeting Agent. Haben Sie weitere Fragen? Kontaktieren Sie uns
+            Hier finden Sie Antworten auf die häufigsten Fragen zu
+            Arcon Agents. Haben Sie weitere Fragen? Kontaktieren Sie uns
             gerne.
           </p>
         </div>

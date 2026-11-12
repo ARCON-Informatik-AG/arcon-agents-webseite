@@ -29,12 +29,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://agents-arcon.ch'),
+  metadataBase: new URL('https://arcon-agents.ch'),
   title: {
-    default: "Arcon Agents | KI für Unternehmen aus der Schweiz",
+    default: "Arcon Agents | KI Agenten für KMU | Hosting in der Schweiz",
     template: "%s | Arcon Agents"
   },
-  description: "Eigene KI-Assistenten, Ihr Unternehmenswissen und individuelle Abacus-Integrationen. In der Schweiz gehostet und persönlich von Arcon betreut.",
+  description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.",
   authors: [{ name: "Arcon Informatik AG" }],
   creator: "Arcon Informatik AG",
   publisher: "Arcon Informatik AG",
@@ -50,15 +50,15 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://agents-arcon.ch',
+    canonical: 'https://arcon-agents.ch',
   },
   openGraph: {
     type: 'website',
     locale: 'de_CH',
-    url: 'https://agents-arcon.ch',
+    url: 'https://arcon-agents.ch',
     siteName: 'Arcon Agents',
-    title: 'Arcon Agents | KI für Unternehmen aus der Schweiz',
-    description: 'Eigene KI-Assistenten, Ihr Unternehmenswissen und individuelle Abacus-Integrationen. In der Schweiz gehostet und persönlich von Arcon betreut.',
+    title: 'Arcon Agents | KI Agenten für KMU | Hosting in der Schweiz',
+    description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.',
     images: [
       {
         url: '/og-image.jpg',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Arcon Agents | KI für Unternehmen aus der Schweiz',
-    description: 'Eigene KI-Assistenten, Ihr Unternehmenswissen und individuelle Abacus-Integrationen. In der Schweiz gehostet und persönlich von Arcon betreut.',
+    description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.',
     images: ['/og-image.jpg'],
   },
 };
@@ -83,11 +83,11 @@ function JsonLd() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://agents-arcon.ch/#organization",
+    "@id": "https://arcon-agents.ch/#organization",
     name: "Arcon Informatik AG",
-    url: "https://agents-arcon.ch",
-    logo: "https://agents-arcon.ch/ARCON_Element_RGB_Green-Light.svg",
-    description: "Arcon Informatik AG entwickelt Arcon Agents – die Schweizer KI-Plattform für Unternehmen mit eigenen KI-Assistenten, Unternehmenswissen und individuellen Integrationen.",
+    url: "https://arcon-agents.ch",
+    logo: "https://arcon-agents.ch/ARCON_Element_RGB_Green-Light.svg",
+    description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Hinterbergstrasse 24",
@@ -107,11 +107,11 @@ function JsonLd() {
   const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://agents-arcon.ch/#website",
-    url: "https://agents-arcon.ch",
+    "@id": "https://arcon-agents.ch/#website",
+    url: "https://arcon-agents.ch",
     name: "Arcon Agents",
     publisher: {
-      "@id": "https://agents-arcon.ch/#organization",
+      "@id": "https://arcon-agents.ch/#organization",
     },
     inLanguage: "de-CH",
   };
@@ -119,11 +119,11 @@ function JsonLd() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "@id": "https://agents-arcon.ch/#software",
+    "@id": "https://arcon-agents.ch/#software",
     name: "Arcon Agents",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "KI-Plattform für Unternehmen: eigene KI-Assistenten, Unternehmenswissen als Wissensquelle und individuelle Integration von Abacus und weiteren Geschäftsanwendungen.",
+    description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.",
     featureList: [
       "Eigene KI-Assistenten erstellen",
       "Antworten aus Unternehmensunterlagen",
@@ -133,7 +133,7 @@ function JsonLd() {
       "Persönliche Betreuung durch Arcon",
     ],
     provider: {
-      "@id": "https://agents-arcon.ch/#organization",
+      "@id": "https://arcon-agents.ch/#organization",
     },
     countryOfOrigin: {
       "@type": "Country",
@@ -164,7 +164,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Analytics IDs must be configured per-environment for agents-arcon.ch; the
+  // Analytics IDs must be configured per-environment for arcon-agents.ch; the
   // previous Meeting Agent IDs are not reused. See .env.example.
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
   const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;

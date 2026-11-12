@@ -1,7 +1,7 @@
 # robots.txt for Arcon Agents
-# https://agents-arcon.ch
+# https://arcon-agents.ch
 
 User-agent: *
 Allow: /
 
-Sitemap: https://agents-arcon.ch/sitemap.xml
+Sitemap: https://arcon-agents.ch/sitemap.xml

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Datenschutzerklärung | Arcon Agents",
     description: "Datenschutzerklärung von Arcon Agents. Schweizer Hosting, DSG-konform.",
-    url: "https://agents-arcon.ch/datenschutz",
+    url: "https://arcon-agents.ch/datenschutz",
   },
   alternates: {
-    canonical: "https://agents-arcon.ch/datenschutz",
+    canonical: "https://arcon-agents.ch/datenschutz",
   },
 };
 
@@ -27,8 +27,8 @@ export default function DatenschutzLayout({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: "https://agents-arcon.ch" },
-          { name: "Datenschutz", url: "https://agents-arcon.ch/datenschutz" },
+          { name: "Home", url: "https://arcon-agents.ch" },
+          { name: "Datenschutz", url: "https://arcon-agents.ch/datenschutz" },
         ]}
       />
       {children}

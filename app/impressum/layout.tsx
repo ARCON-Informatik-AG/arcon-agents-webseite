@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Impressum | Arcon Agents",
     description: "Impressum und rechtliche Angaben zu Arcon Agents by Arcon Informatik AG.",
-    url: "https://agents-arcon.ch/impressum",
+    url: "https://arcon-agents.ch/impressum",
   },
   alternates: {
-    canonical: "https://agents-arcon.ch/impressum",
+    canonical: "https://arcon-agents.ch/impressum",
   },
 };
 
@@ -23,8 +23,8 @@ export default function ImpressumLayout({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: "https://agents-arcon.ch" },
-          { name: "Impressum", url: "https://agents-arcon.ch/impressum" },
+          { name: "Home", url: "https://arcon-agents.ch" },
+          { name: "Impressum", url: "https://arcon-agents.ch/impressum" },
         ]}
       />
       {children}

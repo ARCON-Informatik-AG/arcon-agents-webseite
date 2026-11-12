@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AGB | Arcon Agents",
     description: "Allgemeine Geschäftsbedingungen von Arcon Agents by Arcon Informatik AG.",
-    url: "https://agents-arcon.ch/agb",
+    url: "https://arcon-agents.ch/agb",
   },
   alternates: {
-    canonical: "https://agents-arcon.ch/agb",
+    canonical: "https://arcon-agents.ch/agb",
   },
 };
 
@@ -27,8 +27,8 @@ export default function AGBLayout({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: "https://agents-arcon.ch" },
-          { name: "AGB", url: "https://agents-arcon.ch/agb" },
+          { name: "Home", url: "https://arcon-agents.ch" },
+          { name: "AGB", url: "https://arcon-agents.ch/agb" },
         ]}
       />
       {children}

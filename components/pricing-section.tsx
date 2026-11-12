@@ -239,7 +239,7 @@ export default function PricingSection() {
                     onClick={() => {
                       if (plan.buttonText === "Kontakt") {
                         window.location.href =
-                          "mailto:support@meeting-agent.ch?subject=Anfrage%20zu%20Enterprise%20Abos";
+                          "mailto:support@arcon-agents.ch?subject=Anfrage%20zu%20Enterprise%20Abos";
                         return;
                       }
 
