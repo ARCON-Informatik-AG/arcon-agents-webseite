@@ -3,7 +3,6 @@ import { Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 import ConsentBanner from "@/components/consent-banner";
-import { PasswordGate } from "@/components/PasswordGate";
 import './globals.css';
 
 const karelia = localFont({
@@ -208,10 +207,8 @@ export default function RootLayout({
         )}
       </head>
       <body className={`${karelia.variable} ${geistMono.variable} font-sans antialiased`}>
-      <PasswordGate>
         {children}
         <ConsentBanner />
-      </PasswordGate>
       </body>
     </html>
   );
