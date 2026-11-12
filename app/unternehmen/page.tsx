@@ -36,7 +36,16 @@ const companyStats = [
 export const metadata: Metadata = {
   title: "Unternehmen",
   description:
-    "Die Mission von Arcon Agents und Arcon Informatik AG: durchdachte Digitalisierung, KI-Lösungen und Abacus-Integrationen aus der Schweiz.",
+    "Die Mission von Arcon Agents und Arcon Informatik AG: durchdachte Digitalisierung, KI-Lösungen und Abacus-Integrationen aus der Schweiz. Sicher clever gelöst.",
+  alternates: {
+    canonical: "https://arcon-agents.ch/unternehmen",
+  },
+  openGraph: {
+    title: "Unternehmen | Arcon Agents",
+    description:
+      "Die Mission von Arcon Agents und Arcon Informatik AG: durchdachte Digitalisierung, KI-Lösungen und Abacus-Integrationen aus der Schweiz. Sicher clever gelöst.",
+    url: "https://arcon-agents.ch/unternehmen",
+  },
 };
 
 export default function UnternehmenPage() {

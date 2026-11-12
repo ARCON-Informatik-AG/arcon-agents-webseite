@@ -4,7 +4,7 @@ import { getPostBySlug } from "@/app/news/blog";
 
 const slug = "eigene-ki-assistenten-fuer-ihr-unternehmen";
 const post = getPostBySlug(slug)!;
-const url = `https://arcon-agent.ch/news/${slug}`;
+const url = `https://arcon-agents.ch/news/${slug}`;
 
 export const metadata: Metadata = {
   title: post.title,
@@ -51,7 +51,7 @@ function ArticleJsonLd() {
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     headline: post.title,
     description: post.excerpt,
-    image: [`https://arcon-agent.ch${post.heroImage}`],
+    image: [`https://arcon-agents.ch${post.heroImage}`],
     datePublished: post.date,
     dateModified: post.date,
     author: {
@@ -83,8 +83,8 @@ export default function PostLayout({
       <ArticleJsonLd />
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: "https://arcon-agent.ch" },
-          { name: "News", url: "https://arcon-agent.ch/news" },
+          { name: "Home", url: "https://arcon-agents.ch" },
+          { name: "News", url: "https://arcon-agents.ch/news" },
           { name: post.title, url },
         ]}
       />

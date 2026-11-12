@@ -58,10 +58,10 @@ export const metadata: Metadata = {
     url: 'https://arcon-agents.ch',
     siteName: 'Arcon Agents',
     title: 'Arcon Agents | KI Agenten für KMU | Hosting in der Schweiz',
-    description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.',
+    description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut. Sicher clever gelöst.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/arcon-images/Digital-Collaboration-29.jpg',
         width: 1200,
         height: 630,
         alt: 'Arcon Agents – die Schweizer KI-Plattform für Unternehmen',
@@ -71,8 +71,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Arcon Agents | KI für Unternehmen aus der Schweiz',
-    description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.',
-    images: ['/og-image.jpg'],
+    description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut. Sicher clever gelöst.',
+    images: ['/arcon-images/Digital-Collaboration-29.jpg'],
   },
 };
 
@@ -87,7 +87,7 @@ function JsonLd() {
     name: "Arcon Informatik AG",
     url: "https://arcon-agents.ch",
     logo: "https://arcon-agents.ch/ARCON_Element_RGB_Green-Light.svg",
-    description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.",
+    description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut. Sicher clever gelöst.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Hinterbergstrasse 24",
@@ -123,7 +123,7 @@ function JsonLd() {
     name: "Arcon Agents",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut.",
+    description: "Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut. Sicher clever gelöst.",
     featureList: [
       "Eigene KI-Assistenten erstellen",
       "Antworten aus Unternehmensunterlagen",
