@@ -1,5 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bot, MessageSquareText, FileOutput, FolderKanban } from "lucide-react";
+import {
+  Bot,
+  MessageSquareText,
+  FileOutput,
+  FolderKanban,
+  Plug,
+  ShieldCheck,
+} from "lucide-react";
 
 const platformFeatures = [
   {
@@ -9,18 +16,28 @@ const platformFeatures = [
   },
   {
     title: "Mehr als Text",
-    text: "Analysieren Sie Bilder, erstellen Sie Grafiken und Diagramme oder recherchieren Sie aktuelle Informationen mit Quellenangaben.",
+    text: "Analysieren Sie Bilder, erstellen Sie Grafiken und Diagramme oder recherchieren Sie aktuelle Informationen mit Quellenangaben. Nutzen Sie die Ergebnisse direkt in Ihren Projekten.",
     icon: <MessageSquareText className="h-6 w-6" />,
   },
   {
     title: "Ergebnisse direkt weiterverwenden",
-    text: "Verwandeln Sie Antworten in Dokumente, Auswertungen und Inhalte, mit denen Ihr Team weiterarbeiten kann.",
+    text: "Verwandeln Sie Antworten in Dokumente, Auswertungen und Inhalte, mit denen Ihr Team weiterarbeiten kann. Sei es als Word, Excel, PDF oder anderen Formaten.",
     icon: <FileOutput className="h-6 w-6" />,
   },
   {
     title: "Ordnung im Arbeitsalltag",
-    text: "Organisieren Sie Gespräche in Projekten und speichern Sie häufig verwendete Anfragen als Vorlagen.",
+    text: "Speichern Sie Anfragen als Vorlagen, erstellen Sie eigene Agenten für wiederkehrende Aufgaben und profitieren Sie vom modellübergreifenden Gedächtnis der Plattform.",
     icon: <FolderKanban className="h-6 w-6" />,
+  },
+  {
+    title: "Integrationen in Ihre Systemlandschaft",
+    text: "Verbinden Sie die Plattform mit Abacus, SharePoint, Confluence und weiteren Anwendungen. So greifen Ihre Agenten direkt auf Ihr Unternehmenswissen zu und arbeiten dort, wo Ihr Team bereits arbeitet.",
+    icon: <Plug className="h-6 w-6" />,
+  },
+  {
+    title: "KI für sensible Inhalte",
+    text: "Für vertrauliche Informationen betreiben wir eigene Hochleistungs-LLMs. Ihre Anfragen und Dokumente werden auf unserer Infrastruktur in der Schweiz verarbeitet und nicht an externe Anbieter weitergegeben.",
+    icon: <ShieldCheck className="h-6 w-6" />,
   },
 ];
 

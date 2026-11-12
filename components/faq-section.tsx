@@ -16,7 +16,7 @@ export const faqs = [
   {
     question: "Müssen wir eigene KI-Kenntnisse mitbringen?",
     answer:
-      "Sie benötigen keine Programmierkenntnisse, um die Plattform zu nutzen und eigene Assistenten einzurichten. Für die Einführung und individuelle Anbindungen steht Ihnen unser Team zur Seite.",
+      "Sie benötigen keine KI-Kenntnisse, um die Plattform zu nutzen und eigene Assistenten einzurichten. Für die Einführung und individuelle Anbindungen steht Ihnen unser Team zur Seite.",
   },
   {
     question: "Welche Unterlagen können wir verwenden?",

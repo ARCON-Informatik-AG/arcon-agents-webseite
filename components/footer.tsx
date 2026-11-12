@@ -13,8 +13,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Logo />
             <p className="mt-3 leading-7 text-base">
-              Die Schweizer KI-Plattform für Unternehmen: eigene KI-Assistenten, Ihr
-              Unternehmenswissen und individuelle Integrationen.<br />Entwickelt und
+              Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut. Sicher clever gelöst. Entwickelt und
               gehostet von der ARCON Informatik AG in der Zentralschweiz.
             </p>
           </div>
@@ -31,18 +30,26 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/#integrationen"
+                  href="/#plattform"
                   className="hover:text-[#1bcb80] transition-colors"
                 >
-                  Integrationen
+                  Funktionen
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#plattform"
+                  href="/#pricing"
                   className="hover:text-[#1bcb80] transition-colors"
                 >
-                  Möglichkeiten
+                  Preise
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#assistenten"
+                  className="hover:text-[#1bcb80] transition-colors"
+                >
+                  Integrationen
                 </Link>
               </li>
               <li>
@@ -55,11 +62,21 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/#faq"
+                  href="/#onboarding"
                   className="hover:text-[#1bcb80] transition-colors"
                 >
-                  FAQ
+                  Onboarding
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="https://meeting-agent.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#1bcb80] transition-colors"
+                >
+                  Meeting Agent
+                </a>
               </li>
             </ul>
           </div>
@@ -72,6 +89,14 @@ const Footer = () => {
                   className="hover:text-[#1bcb80] transition-colors"
                 >
                   Unternehmen
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  className="hover:text-[#1bcb80] transition-colors"
+                >
+                  News
                 </Link>
               </li>
               <li>

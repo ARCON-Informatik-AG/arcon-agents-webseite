@@ -7,8 +7,8 @@ const steps = [
     text: "In einer persönlichen Demo zeigen wir Ihnen Arcon Agents und besprechen, wo Ihr Team Unterstützung benötigt.",
   },
   {
-    title: "Gezielt erproben",
-    text: "In einem vereinbarten Pilotprojekt prüfen wir die Lösung anhand ausgewählter Aufgaben. Gemeinsam legen wir fest, woran Sie den Nutzen beurteilen.",
+    title: "Frei testen und selbst überzeugen",
+    text: "Probieren Sie Arcon Agents in Ruhe aus, mit Ihren eigenen Aufgaben und ohne feste Vorgaben. So können Sie sich selbst von den Vorteilen überzeugen.",
   },
   {
     title: "Im Unternehmen einführen",

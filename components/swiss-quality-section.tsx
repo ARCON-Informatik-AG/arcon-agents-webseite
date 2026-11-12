@@ -89,9 +89,8 @@ export default function SwissQualitySection() {
                 <div className="space-y-4 text-base sm:text-lg text-gray-800 leading-relaxed">
                   <p>
                     Arcon Agents wird vollständig in der Schweiz entwickelt
-                    und betrieben. Sämtliche Daten werden in unserem ISO
-                    27001 zertifizierten Rechenzentrum in der Schweiz
-                    verarbeitet und gespeichert.
+                    und betrieben. Sämtliche Daten werde dabei vollständig in der Schweiz
+                    verarbeitet und gespeichert. Durch unsere ISO 27001 Zertifizierung gewährleisten wir höchste Sicherheitsstandards.
                   </p>
                   <p>
                     Als Teil der ARCON Informatik AG verfügen wir über
