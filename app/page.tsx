@@ -5,7 +5,6 @@ import { FaqJsonLd } from "@/components/json-ld";
 import HeroSection from "@/components/hero-section";
 import UseCasesSection from "@/components/use-cases-section";
 import AssistantsSection from "@/components/assistants-section";
-import IntegrationsSection from "@/components/integrations-section";
 import PlatformSection from "@/components/platform-section";
 import WhyArconSection from "@/components/why-arcon-section";
 import SwissQualitySection from "@/components/swiss-quality-section";
@@ -15,7 +14,7 @@ import PricingSection from "@/components/pricing-section";
 import FaqSection, { faqs } from "@/components/faq-section";
 
 export const metadata: Metadata = {
-  title: "Arcon Agents | KI für Unternehmen aus der Schweiz",
+  title: "Arcon Agents | KI Agenten für KMU | Hosting in der Schweiz",
   description:
     "Eigene KI-Assistenten, Ihr Unternehmenswissen und individuelle Abacus-Integrationen. In der Schweiz gehostet und persönlich von Arcon betreut.",
 };

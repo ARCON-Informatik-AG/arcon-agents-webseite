@@ -100,6 +100,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/kontakt"
+                  className="hover:text-[#1bcb80] transition-colors"
+                >
+                  Kontakt
+                </Link>
+              </li>
+              <li>
                 <a
                   href={BOOKINGS_URL}
                   target="_blank"

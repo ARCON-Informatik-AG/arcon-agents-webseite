@@ -61,11 +61,11 @@ export default function UnternehmenPage() {
                 im Alltag funktioniert.
               </span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-gray-900 leading-relaxed">
+            <p className="mx-auto mt-6 max-w-2xl text-base sm:text-xl text-gray-900 leading-relaxed">
               Wir sind die Arcon Informatik AG aus der Zentralschweiz: seit über
-              35 Jahren Partner für Abacus und moderne ICT-Lösungen. Hier
+              35 Jahren führender Partner für Abacus, moderne ICT-Lösungen, Digital Collaboration und KI. Hier
               erfahren Sie, wofür wir stehen und wie Arcon Agents Ihr
-              Unternehmen unterstützt.
+              Unternehmen unterstützt. Sicher clever gelöst.
             </p>
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function UnternehmenPage() {
                 sondern im Alltag wirklich funktionieren.
               </p>
               <p>
-                Auch beim Meeting Agent verfolgen wir genau diesen Anspruch:
+                Auch bei den Arcon Agents verfolgen wir genau diesen Anspruch:
                 Wir denken Prozesse weiter, kombinieren bestehende Systeme mit
                 neuen Möglichkeiten und schaffen echten Mehrwert für unsere
                 Kundinnen und Kunden.

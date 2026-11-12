@@ -14,6 +14,7 @@ const NAV_LINKS = [
   { href: "/news", label: "News" },
   { href: "/unternehmen", label: "Unternehmen" },
   { href: "/#onboarding", label: "Onboarding" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 const Header = () => {

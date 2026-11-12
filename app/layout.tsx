@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arcon Agents | KI für Unternehmen aus der Schweiz',
+    title: 'Arcon Agents | KI Agenten für KMU | Hosting in der Schweiz',
     description: 'Eigene KI Agenten, Frontier-Modelle, Ihr Unternehmenswissen und Integrationen in einer Plattform. In der Schweiz gehostet und persönlich von Arcon betreut. Sicher clever gelöst.',
     images: ['/arcon-images/Digital-Collaboration-29.jpg'],
   },

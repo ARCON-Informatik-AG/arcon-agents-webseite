@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...postEntries,
     {
+      url: `${baseUrl}/kontakt`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.5,
+    },
+    {
       url: `${baseUrl}/datenschutz`,
       lastModified: now,
       changeFrequency: 'yearly',
