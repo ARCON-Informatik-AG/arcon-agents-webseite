@@ -4,6 +4,8 @@ services:
     image: ghcr.io/arcon-informatik-ag/arcon-agents-webseite:1.0.1
     build:
       context: .
+      args:
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
     ports:
       - "3003:3000"
     restart: unless-stopped

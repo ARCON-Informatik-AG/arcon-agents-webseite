@@ -6,6 +6,8 @@ ENV NEXT_TELEMETRY_DISABLED=1
 COPY package*.json ./
 RUN npm ci
 COPY . .
+ARG NEXT_PUBLIC_GA_ID
+ENV NEXT_PUBLIC_GA_ID=$NEXT_PUBLIC_GA_ID
 RUN npm run build
 
 # -------------------- Runtime stage ----------------------------
